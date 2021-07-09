@@ -53,7 +53,7 @@ body{
     height: 25px;
     left: 54px;
     top: 22px;
-    background: url(../img/Union.png);
+    background: url(./img/Union.png);
 }
 
 .switch-2divs{
@@ -339,7 +339,7 @@ color: #404040;
     right: 5px;
     top: 11px;
     background-color: #404040;
-    background: url(../img/Menu-Icon.png);
+    background: url(./img/Menu-Icon.png);
 }
 .text-block{
     position: absolute;
@@ -382,7 +382,7 @@ color: #404040;
     top: 585px;
 
     border-radius: 0px;
-    background: url(../img/Desktop.png);
+    background: url(./img/Desktop.png);
     z-index: 2;
     -webkit-animation-name: rotate-ell;
     -webkit-animation-duration: 10s;
@@ -529,7 +529,7 @@ color: #404040;
     left: 60px;
     top: 873px;
     margin-right: 40px;
-    background: url(../img/Feature01before.png);
+    background: url(./img/Feature01before.png);
     z-index: +2;
 
 }
@@ -538,7 +538,7 @@ color: #404040;
     height: 328px;
     left: 60px;
     top: 873px;
-    background: url(../img/Feature01.png) no-repeat;
+    background: url(./img/Feature01.png) no-repeat;
     
 }
 .rest109{
@@ -639,7 +639,7 @@ color: #404040;
     left: 395px;
     bottom: 0px;
     border-radius: 0px;
-    background: url(../img/Group152.png);
+    background: url(./img/Group152.png);
     z-index: +1;
 }
 .layer51{
@@ -649,7 +649,7 @@ color: #404040;
     left: calc(50% - 211px/2 + 170.5px);
     bottom: 0px;
 
-    background: url(../img/Layer51.png);
+    background: url(./img/Layer51.png);
 }
 .image147{   
     position: absolute;    
@@ -657,7 +657,7 @@ color: #404040;
     bottom: 0px;
     width: 201px;
     height: 148px;
-    background: url(../img/image147.png);
+    background: url(./img/image147.png);
     transform: rotate(-0.5deg);
     }
 .group176{
@@ -674,7 +674,7 @@ color: #404040;
     left: 173px;
     bottom: 0px;
     top: 1515px;
-    background: url(../img/Placeholder.png);
+    background: url(./img/Placeholder.png);
     border-radius: 8px;
     /* z-index: 3; */
 }
@@ -724,7 +724,7 @@ color: #404040;
     height: 800px;
     left: 375px;
     bottom: 0px;
-    background: url(../img/img_bg.png);    
+    background: url(./img/img_bg.png);    
 } */
 .tag{
     position: relative;
