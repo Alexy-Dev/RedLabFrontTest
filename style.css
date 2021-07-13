@@ -1,10 +1,16 @@
 
-body{
+/* body{
     height: 2300px;
     width: 1440px;
-    /* left: -3769px;
-    top: -6941px; */
+    
     border-radius: 0px;
+    } */
+.cover{
+    height: 2300px;
+    width: 1440px;
+    border-radius: 0px;
+    left: 0px;
+    top: 0px;
     }
 .header{
     border-radius: 0px;
@@ -374,143 +380,8 @@ color: #404040;
     line-height: 25px;    
     color: #404040;
 }
-.btn-prim-desc{
-    position: fixed;
-    width: 195px;
-    height: 195px;
-    left: 622px;
-    top: 585px;
 
-    border-radius: 0px;
-    background: url(./img/Desktop.png);
-    z-index: 2;
-    -webkit-animation-name: rotate-ell;
-    -webkit-animation-duration: 10s;
 
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-delay: 0;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;  
-   
-}
-@-webkit-keyframes rotate-ell {
-    from{        
-        -webkit-transform: rotate(-15deg);
-    }
-    to {        
-        -webkit-transform: rotate(15deg);
-    }
-}
-.ZoomOut{
-    animation-name: ZoomOut;    
-    animation-duration: 8s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;  
-}
-
-@keyframes ZoomOut {
-    from {
-      transform: scale(1, 1) rotate(15deg);
-    }
-    to {
-      transform: scale(0.6, 0.6)  rotate(45deg);
-    }
- 
-}
-.ZoomOutFooter{
-    animation-name: ZoomOutFooter;    
-    animation-duration: 8s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;  
-}
-
-@keyframes ZoomOutFooter {
-    from {
-      transform: scale(0.6, 0.6) rotate(45deg);
-    }
-    75% {
-        transform: scale(0.4, 0.4) rotate(65deg);
-      }
-    85% {
-        transform: scale(0.4, 0.4) translate(50px, 150px);
-        
-    }
-    to {
-        transform: scale(0, 0) translate(50px);        
-      }
-}
-.MooveFooter{
-    animation: MooveFooter;
-    
-    animation-duration: 7s;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes MooveFooter {
-    from {
-      transform: translate(0px, 0px);
-    }  
-    to {
-        transform: translate(195px, 70px) scale(1.27, 1.27);
-    }   
-}
-.MooveFooterRest{
-    animation: MooveFooterRest;
-    
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: 4s;
-}
-
-@keyframes MooveFooterRest {
-    from {
-        margin-top: 200%;
-        height: 200%;
-      /* transform: translateY(2300px); */
-    }
-  
-    to {
-        margin-top: 0%;
-        height: 100%;
-        /* transform: translateY(-768px); */
-      }   
-}
-.ZoomInTags{
-    animation-name: ZoomInTags;    
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: 0s;  
-}
-
-@keyframes ZoomInTags {
-    from {
-      transform: scale(0, 0);
-      transform: opacity(0);
-    }
-    to {
-      transform: scale(1, 1);
-      transform: opacity(1);
-    }
- 
-}
 .features{
     position: absolute;
     flex-direction: row;
@@ -566,20 +437,26 @@ color: #404040;
     height: 328px;
     left: 400px;
     top: 873px;
+    background: url(./img/Feature02.png);
     margin-right: 40px;
+    margin-top: 100px
 }
 .feature03{   
     width: 300px;
     height: 328px;
     left: 740px;
     top: 873px;
+    background: url(./img/Feature03.png);
     margin-right: 40px;
+    margin-top: 200px
 }
 .feature04{    
     width: 300px;
     height: 328px;
     left: 1080px;
     top: 873px;
+    background: url(./img/Feature04.png);
+    margin-top: 300px
 }
 .rest110{
     position: absolute;
@@ -591,7 +468,7 @@ color: #404040;
     border-radius: 8px;
 }
 .text-rest02{
-    position: absolute;
+    /* position: relative; */
     width: 271px;
     height: 62px;
     right: 700px;
@@ -669,12 +546,13 @@ color: #404040;
 }
 .plaseholder{
     position: absolute;
-    width: 1094px;
-    height: 630px;
+    width: 1065px;
+    height: 800px;
     left: 173px;
     bottom: 0px;
-    top: 1515px;
+    top: 1500px;
     background: url(./img/Placeholder.png);
+    transform: scale(0.75, 0.75);
     border-radius: 8px;
     /* z-index: 3; */
 }
@@ -710,13 +588,12 @@ color: #404040;
 .footer-scroll{
     position: absolute;
     height: 800px;
-    width: 1440px;
-    left: 0px;
+    width: 1065px;
+    left: 375px;
     top: 1500px;
-    border-radius: 0px;
-    
-    /* opacity: 0; */
+    border-radius: 0px;   
     display: none;
+    /* z-index: 1; */
 }
 /* .img-bg{
     position: absolute;
@@ -777,7 +654,7 @@ color: #404040;
     position: absolute;   
     height: 29.99999948657187px;
     width: 29.99999948657187px;
-    left: 717.212890625px;
+    left: 342.212890625px;
     top: 247px;
     border-radius: 0px;
 
@@ -786,7 +663,7 @@ color: #404040;
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 637px;
+    left: 262px;
     top: 445px;
     border-radius: 0px;    
 }
@@ -794,7 +671,7 @@ color: #404040;
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 845px;
+    left: 470px;
     top: 475px;
     border-radius: 0px;    
 }
@@ -802,7 +679,7 @@ color: #404040;
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 674px;
+    left: 299px;
     top: 714px;
     border-radius: 0px;    
 }
@@ -810,7 +687,7 @@ color: #404040;
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 1006px;
+    left: 631px;
     top: 377px;
     border-radius: 0px;    
 }
@@ -818,7 +695,7 @@ color: #404040;
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 1206px;
+    left: 831px;
     top: 497px;
     border-radius: 0px;    
 }
@@ -827,29 +704,21 @@ color: #404040;
     align-items:center;
     height: 30px;
     width: 30px;
-    left: 966px;
+    left: 591px;
     top: 586px;
     border-radius: 0px;    
 }
 .gradient{
     position: absolute;
     visibility: hidden;
-    width: 1440px;
+    width: 1065px;
     height: 800px;
     left: 0px;
     top: 0px;
     background: linear-gradient(270deg, rgba(64, 66, 78, 0) 54.17%, rgba(64, 66, 78, 0.5) 100%);
+    z-index: 1;
 }
-.rectangle_130{
-    /* position: absolute; */
-    width: 375px;
-    height: 800px;
-    left: 0px;
-    top: 1500px;
-    background: #5A30F0;
-    /* display: none; */
-    margin-top: 250%;
-}
+
 /* .container-big{
     height: 950px;
     width: 1440px;
@@ -865,8 +734,22 @@ color: #404040;
     position: absolute;
     width: 375px;
     height: 800px;
+    right: 1065px;
     left: 0px;
     top: 1500px;
+    z-index: 0;
+}
+.rectangle_130{
+    /* position:absolute; */
+    width: 375px;
+    height: 800px;
+    /* left: 0px; */
+    right: 1440px;
+    top: 1500px;
+    background: #5A30F0;
+    display: none;
+    margin-right: 250%;
+    z-index: 0;
 }
 .text-head-rect{
     height: 21px;
@@ -890,7 +773,8 @@ color: #404040;
     left: 60px;
     top: 256px;
     bottom: 266px;
-    /* z-index: 3; */
+    /* z-index: 1;
+    -webkit-animation-delay: 0.5; */
 }
 .tabs-kit{    
     width: 186px;
@@ -903,6 +787,9 @@ color: #404040;
     font-size: 44px;
     line-height: 120%;   
     color: #FFFFFF;
+    z-index: 1;
+    /* animation-delay: 0.5; */
+    /* display: none; */
 }
 .tabs-kit:hover{
     font-family: TT Travels;
@@ -911,13 +798,15 @@ color: #404040;
     font-size: 44px;
     line-height: 120%;
     color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 1;
+    
 }
 .tabs-rooms{    
     width: 240px;
     height: 53px;
-    left: 60px;
+    left: 45px;
     top: 331px;
+    margin-top: 10px;
     font-family: TT Travels;
     font-style: normal;
     font-weight: normal;
@@ -925,6 +814,8 @@ color: #404040;
     line-height: 53px;   
     color: #FFFFFF;
     opacity: 0.7;
+    /* animation-delay: 0.5; */
+    display: none;
 }
 .tabs-rooms:hover{
     font-family: TT Travels;
@@ -934,12 +825,14 @@ color: #404040;
     line-height: 120%;    
     color: #FFFFFF;
     opacity: 1;
+    
 }
 .tabs-bath{    
     width: 206px;
     height: 53px;
-    left: 60px;
+    left: 40px;
     top: 406px;
+    margin-top: 10px;
     font-family: TT Travels;
     font-style: normal;
     font-weight: normal;
@@ -947,6 +840,8 @@ color: #404040;
     line-height: 120%;    
     color: #FFFFFF;
     opacity: 0.7;
+    /* animation-delay: 0.5; */
+    display: none;
 }
 .tabs-bath:hover{
     font-family: TT Travels;
@@ -957,13 +852,15 @@ color: #404040;
     
     color: #FFFFFF;
     opacity: 1;
+    
 }
 .tabs-hall{
     
     width: 279px;
     height: 53px;
-    left: 60px;
+    left: 35px;
     top: 481px;
+    margin-top: 10px;
 
     font-family: TT Travels;
     font-style: normal;
@@ -973,6 +870,8 @@ color: #404040;
     color: #FFFFFF;
 
     opacity: 0.7;
+    /* animation-delay: 0.5; */
+    display: none;
 }
 .tabs-hall:hover{
     font-family: TT Travels;
@@ -982,6 +881,7 @@ color: #404040;
     line-height: 53px;
     color: #FFFFFF;
     opacity: 1;
+    
 }
 .tags{
     height: 496.9638671875px;
@@ -991,6 +891,290 @@ color: #404040;
     border-radius: 0px;
 
 }
+
+.btn-prim-desc{
+    position: fixed;
+    width: 195px;
+    height: 195px;
+    left: 622px;
+    top: 585px;
+    /* transition: rotate(-15deg); */
+
+    border-radius: 0px;
+    background: url(./img/Desktop.png);
+    z-index: 2;
+    -webkit-animation-name: rotate-ell;
+    -webkit-animation-duration: 10s;
+
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;  
+   
+}
+@-webkit-keyframes rotate-ell {
+    from{        
+        -webkit-transform: rotate(0deg);
+    }
+    50%{-webkit-transform: rotate(30deg)
+    }
+    75%{-webkit-transform: translateY(150px) rotate(30deg)
+    }
+    to {        
+        transform: translateY(150px) rotate(35deg) scale(0.9, 0.9);
+    }
+}
+.ZoomOut{
+    animation-name: ZoomOut;    
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;  
+}
+@keyframes ZoomOut {
+    from {
+      transform: translateY(150px) scale(0.9, 0.9) rotate(35deg);
+    }
+    to {
+      transform: translateY(200px) scale(0.8, 0.8)  rotate(60deg);
+    }
+ 
+}
+.ZoomOutFooter{
+    animation-name: ZoomOutFooter;    
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;  
+}
+
+@keyframes ZoomOutFooter {
+    from {
+      transform: translateY(200px) scale(0.8, 0.8) rotate(60deg);
+    }
+    75% {
+        transform: translateY(200px) scale(0.6, 0.6) rotate(75deg);
+      }
+    85% {
+        transform: translateY(250px) scale(0.4, 0.4);
+        
+    }
+    to {
+        transform: translateY(300px) scale(0, 0);        
+      }
+}
+.MooveFooter{
+    animation: MooveFooter;
+    
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes MooveFooter {
+    from {
+      transform: translate(0px, 0px) scale(0.75, 0.75);
+    }  
+    to {
+        transform: translate(202px, 0px) scale(1, 1);
+    }   
+}
+.MooveFooterRest{
+    animation: MooveFooterRest;
+    
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes MooveFooterRest {
+    from {
+        /* margin-right: 250%; */
+        /* width: 300%; */
+      transform: translateX(-250px);
+    }
+  
+    to {
+        /* margin-right: 0%; */
+        /* width: 100%; */
+        transform: translateX(0px);
+      }   
+}
+.MooveTabs01{
+    animation: MooveTabs01;
+    
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0.5s;
+}
+
+@keyframes MooveTabs01 {
+    from {
+      transform: translateX(-5px);
+    }  
+    to {
+        transform: translateX(0px);
+      }   
+}
+.MooveTabs02{
+    animation: MooveTabs02;
+    
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes MooveTabs02 {
+    from {
+      transform: translateX(-15px);
+      transform: opacity(0);
+    }  
+    to {
+        transform: translateX(0px);
+        transform: opacity(0.7);
+      }   
+}
+.MooveTabs03{
+    animation: MooveTabs03;
+    
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes MooveTabs03 {
+    from {
+      transform: translateX(-20px);
+    }  
+    to {
+        transform: translateX(0px);
+      }   
+}
+.MooveTabs04{
+    animation: MooveTabs04;
+    
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: ease;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes MooveTabs04 {
+    from {
+      transform: translateX(-30px);
+    }  
+    to {
+        transform: translateX(0px);
+      }   
+}
+.ZoomInTags{
+    animation-name: ZoomInTags;    
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0s;  
+}
+
+@keyframes ZoomInTags {
+    from {
+      transform: scale(0, 0);
+      transform: opacity(0);
+    }
+    to {
+      transform: scale(1, 1);
+      transform: opacity(1);
+    }
+ 
+}
+.MoveFeatures02Up{
+        animation: MoveFeatures02Up;        
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+    }
+    
+    @keyframes MoveFeatures02Up {
+        from {
+            margin-top: 100px;       
+        }      
+        to {
+            margin-top: 0%;
+          }   
+    }
+    .MoveFeatures03Up{
+        animation: MoveFeatures03Up;        
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+    }
+    
+    @keyframes MoveFeatures03Up {
+        from {
+            margin-top: 200px;       
+        }      
+        to {
+            margin-top: 0%;
+          }   
+    }
+    .MoveFeatures04Up{
+        animation: MoveFeatures04Up;        
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-animation-delay: 0s;
+    }
+    
+    @keyframes MoveFeatures04Up {
+        from {
+            margin-top: 300px;       
+        }      
+        to {
+            margin-top: 0%;
+          }   
+    }
 .show{display:block}
 .hide{display:none}
 .pose{position: absolute;}
