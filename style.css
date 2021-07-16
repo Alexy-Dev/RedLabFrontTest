@@ -1070,7 +1070,7 @@ top: 250.8px;
 }
 .ZoomOutFooter{
     animation-name: ZoomOutFooter;    
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     -webkit-animation-direction: normal;
@@ -1096,7 +1096,7 @@ top: 250.8px;
 .MooveFooter{
     animation: MooveFooter;
     
-    animation-duration: 4.5s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     -webkit-animation-direction: normal;
     -webkit-animation-play-state: running;
@@ -1114,7 +1114,7 @@ top: 250.8px;
 .MooveFooterRest{
     animation: MooveFooterRest;
     
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
     -webkit-animation-direction: normal;
     -webkit-animation-play-state: running;
@@ -1140,7 +1140,7 @@ top: 250.8px;
 .MooveTabs01{
     animation: MooveTabs01;
     
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
     -webkit-animation-direction: normal;
     -webkit-animation-play-state: running;
@@ -1225,7 +1225,7 @@ top: 250.8px;
 }
 .ZoomInTags{
     animation-name: ZoomInTags;    
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     -webkit-animation-direction: normal;
@@ -1265,7 +1265,7 @@ top: 250.8px;
     }
     .MoveFeatures03Up{
         animation: MoveFeatures03Up;        
-        animation-duration: 1s;
+        animation-duration: 0.9s;
         animation-iteration-count: 1;
         -webkit-animation-direction: normal;
         -webkit-animation-play-state: running;
@@ -1283,7 +1283,7 @@ top: 250.8px;
     }
     .MoveFeatures04Up{
         animation: MoveFeatures04Up;        
-        animation-duration: 1.5s;
+        animation-duration: 1.3s;
         animation-iteration-count: 1;
         -webkit-animation-direction: normal;
         -webkit-animation-play-state: running;
@@ -1302,7 +1302,7 @@ top: 250.8px;
     .MooveImg01{
         animation: MooveImg01;
         
-        animation-duration: 1.5s;
+        animation-duration: 1.2s;
         animation-iteration-count: 1;
         -webkit-animation-direction: normal;
         -webkit-animation-play-state: running;
@@ -1323,7 +1323,7 @@ top: 250.8px;
     .MooveImg03{
         animation: MooveImg03;
         
-        animation-duration: 1.5s;
+        animation-duration: 1.2s;
         animation-iteration-count: 1;
         -webkit-animation-direction: normal;
         -webkit-animation-play-state: running;

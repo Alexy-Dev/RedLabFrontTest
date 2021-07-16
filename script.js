@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => {      
         
         tagsShow.classList.add('show');
-        }, 5000);        
+        }, 4000);        
     }
     const tagsShow2 = document.querySelector('.footer-scroll-2');
     function openAnimationTags2() {
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => {      
         // tagsShow.classList.remove('hide');
         tagsShow2.classList.add('show');
-        }, 2000);        
+        }, 1500);        
     }
     const feature02 = document.querySelector('.feature02'),
           feature03 = document.querySelector('.feature03'),
