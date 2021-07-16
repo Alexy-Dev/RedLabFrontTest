@@ -122,10 +122,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     showTab(i);
                     slider.classList.add('show');
                     console.log(img[i]);
-                    img[i].classList.add('MooveImg03');
+                    img[i].classList.add('MooveImg01');
                 }
                 if (target && target.classList.contains('tabs-bath')) {
-                    img[2].classList.add('MooveImg01');
+                    img[2].classList.add('MooveImg03');
                     openAnimationTags2();
                 }              
             });
