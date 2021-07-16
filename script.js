@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => {      
         // tagsShow.classList.remove('hide');
         tagsShow2.classList.add('show');
-        }, 3000);        
+        }, 2000);        
     }
     const feature02 = document.querySelector('.feature02'),
           feature03 = document.querySelector('.feature03'),
